@@ -1,0 +1,33 @@
+{% extends 'proveedores.html' %}
+{% block titulo %}Crear Vehiculo{% endblock titulo %}
+
+{% block cuerpo %}
+<body class="fondo1">
+        
+    <div id="contenedor">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">
+                    Iniciar Sesión
+                </div>
+               <form  method="post" >
+                    {% for message in messages %}
+                        <p id= "mensajes"> {{message}}</p>
+                    {% endfor %}
+                    {% csrf_token %}
+                    <input placeholder="Nombre de usuario" type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username">
+                    <input placeholder="Contraseña" type="password" name="password"  autocomplete="current-password" required id="id_password">
+                    
+                    <button type="submit" id="submit" >Iniciar Sesión</button>
+                </form>
+                <div class="pie-form">
+                    <a href="#">¿No tienes Cuenta? Registrate</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        
+</body>    
+
+{% endblock cuerpo %}

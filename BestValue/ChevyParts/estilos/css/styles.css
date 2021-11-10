@@ -1,0 +1,289 @@
+body {
+    background-color: rgb(175, 155, 155)
+    ;
+}
+
+header nav {
+    padding: 45px 0 0 0;
+    width: 75%;
+    margin-left: 1260px;
+    margin-right: 0px;
+}
+header nav a {
+    margin: 0 0 0 180px;
+    color: white;
+    text-decoration: none;
+}
+.Logo{
+    float: left;
+    margin: 28px 25px 0px 8px;
+    color: white;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li{
+    background-color: rgb(175, 155, 155);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+#menu ul a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:10px;
+    margin: auto;
+    width: 500px;
+}
+
+#menu > ul li{
+    float: left;
+}
+
+#menu ul li ul li:hover {
+    background:#484a4e;
+}
+#menu ul ul {
+    display: none;
+    position:absolute;
+    
+   }
+
+   #menu ul ul li {
+    float:none;
+    margin: 12px 0px 0px -12px;
+   }
+
+   #menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+
+   #menu ul li:hover > ul {
+    display:block;
+   }
+
+.fondo {
+    margin: 76px 110px;
+}
+
+.cuadrado {
+    width: 1317px;
+    height: 250px;
+    background: #a87d7d;
+    margin: 145px 533px;
+}
+
+.Crear {
+    color: white;
+    padding: 10px;
+    margin: 19px 85px;
+}
+
+label {
+    color: white;
+    font-size: 15px;
+    margin: 13px 91px;
+}
+
+input#id_Nombre {
+    margin: -5px 60px 0px -85px;
+}
+
+input#id_Apellido {
+    margin: 7px 60px 0px -87px;
+}
+
+select#id_cargoEmpleado {
+    margin: 0px 60px 0px -87px;
+}
+
+.Button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8b6482;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 6px;
+    width: 105px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 9px;
+  }
+.Button:hover {background-color: rgb(87, 49, 49);}
+
+.Ubi{
+    margin: 26px 1165px;
+}
+
+.tamaño{
+    margin: 146px 20px;
+}
+
+.Tarejta {
+    width: 211px;
+    height: 127px;
+    float: left;
+    margin: 56px 46px 0px 18px;
+    border: 1px solid;
+    background-color: azure;
+    border-radius: 7px;
+}
+
+.Tarejta:hover {
+    background-color: darkgray;
+}
+
+input#id_nombre_repuesto {
+    margin: -75px -5px 0px -87px;
+}
+
+select#id_Descripcion {
+    margin: 0px 8px 0px -78px;
+}
+
+select#id_Fk_vehiculo {
+    margin: 0px -15px 0px -81px;
+}
+
+.fondo1 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    border: 0;
+    margin: 0;
+    background: rgb(175, 155, 155)
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 250%;
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #a0945e;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #ffffff;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: black;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:black;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #ffffff;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #717231;
+    color:#bbe1fa;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #717231;
+}
+
+.inferior {
+    margin-top: 10px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.inferior a {
+    display: block;
+    text-decoration: none;
+    color: #fdfdfd;
+    margin-bottom: 3px;
+}
+
+.inferior a:hover {
+    color: #717231;
+}

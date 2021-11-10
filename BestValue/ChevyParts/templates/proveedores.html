@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>{% block titulo %} Chevy Parts {% endblock titulo %}</title>
+    
+    
+    
+</head>
+<body >
+    
+    <div class="page">
+        <header>
+            <div alt="Logo y nombre">
+                <div class="Logo">
+                    <img src="{% static 'img/bateria-de-coche.png' %}" width="125" height="125">
+                </div>
+                <div class="Logo" >
+                    <h1 class="Centrar">ChevyParts</h1>
+                </div>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="{% url 'index_repuesto' %}">Repuestos</a>
+                    <ul>
+                        <li><a href="{% url 'crear_repuesto' %}">Ingresar</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="{% url 'index_empleados' %}">Empleados</a>
+                    <ul>
+                        <li><a href="{% url 'crear_empleados' %}">Ingresar</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="{% url 'index_proveedor' %}">Proveedores</a>
+                    <ul>
+                        <li><a href="{% url 'crear_proveedor'%}">Ingresar</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Administrador</a>
+                    <ul>
+                        <li><a href="{% url 'index_vehiculo' %}">Vehiculo</a>
+                        <ul>
+                            <li><a href="{% url 'crear_vehiculo' %}">Ingresar</a></li>
+                        </ul></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/office/16/000000/search--v1.png" width="35" height="35"/></a></li>
+                </ul>   
+            </nav>
+        </header>
+    </div>
+
+    
+    
+</body>
+{% block cuerpo %}
+{% endblock cuerpo %}
+</html>
+

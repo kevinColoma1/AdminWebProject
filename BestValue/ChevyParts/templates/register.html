@@ -1,0 +1,35 @@
+{% extends 'proveedores.html' %}
+{% block titulo %}Crear Vehiculo{% endblock titulo %}
+
+
+{% block cuerpo %}
+<body class= fondo1>
+    <div class="tapar">
+    </div>
+    <div id="contenedor">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">
+                    Registro de nuevo usuario
+                </div>
+                <form method="POST" >
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <select name="" id="">
+                        {% for group in groups %}
+                        <option name="group_name" value="{{group.name}}">{{group.name}}</option>
+                        {% endfor %}
+                    </select>
+                    
+                    <button type="submit" id="submit" >Registrarse</button>
+                </form>
+            </div>
+            <element class="inferior">
+                <a href="#">Volver</a>
+            </div>
+        </div>
+    </div>
+        
+</body>    
+
+{% endblock cuerpo %}

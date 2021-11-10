@@ -1,0 +1,23 @@
+{% extends 'proveedores.html' %}
+{% block titulo %} Editar vehiculo {% endblock titulo %}
+{% block cuerpo %}
+<body>
+    <div class="fondo">
+        <header>
+            <div class="cuadrado"> 
+                <div class= "Crear">
+                    <h1>Editar Vehiculo</h1>
+                </div>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                        {{form}}
+                    <div class="Ubi">
+                        <button class="Button" type="submit">Editar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </header>
+    </div>
+</body>
+{% endblock cuerpo %}

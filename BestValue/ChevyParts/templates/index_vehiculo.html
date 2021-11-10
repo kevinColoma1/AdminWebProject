@@ -1,0 +1,24 @@
+{% extends 'proveedores.html' %}
+{% block titulo %}Crear Vehiculo{% endblock titulo %}
+
+
+{% block cuerpo %}
+
+<div class="tamaño">
+        {% for vehiculo in vehiculos %}
+        <div class="Tarejta">
+                <div >
+                        <a href="{% url 'editar_vehiculo' vehiculo.id %}">  <img src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-edit-mintab-for-ios-becris-lineal-becris.png" align="right" width="35" height="35"/></a> 
+                                <a href="{% url 'eliminar_vehiculo' vehiculo.id %}">  <img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-delete-miscellaneous-kiranshastry-solid-kiranshastry.png" align="right" width="35" height="35"/></a>
+                       <br>
+                        Nombre:    {{ vehiculo.marca }} <br>
+                        Apellido:   {{ vehiculo.modelo }} <br>
+                        Cargo:   {{ vehiculo.año }} <br>
+                        
+                        
+                   </div>
+        </div>
+        {%endfor%}
+</div>
+
+{% endblock cuerpo %}

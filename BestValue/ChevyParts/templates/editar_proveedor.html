@@ -1,0 +1,10 @@
+{% extends 'proveedores.html' %}
+{% block titulo %} Editar persona {% endblock titulo %}
+{% block cuerpo %}
+<h1>  Editar proveedor  </h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Editar</button>
+</form>
+{% endblock cuerpo %}
